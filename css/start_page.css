@@ -5,14 +5,11 @@
 
 div {
     position: relative;
-    display: flex;
-    flex-direction: column;
 }
 
 html {
     width: 100%;
     min-height: 100%; /* Минимальная высота */
-    height: 1px;/* Для того, чтобы дочерние блоки взяли высоту 100% нужна фиксированная величина */
     font-size: 10px;
     background: palegoldenrod;
 }
@@ -20,14 +17,13 @@ html {
 body {
     width: 100%;
     min-height: 100%;
-    height: 1px;
     background: palegreen;
 }
 
 .header {
     display: flex;
     background: orange;
-    height: 10%;
+    height: 8rem;
     flex-direction: row;
 }
 
@@ -38,13 +34,15 @@ body {
 }
 
 .menu {
+    display: flex;
     width: 20%;
     height: 100%;
     flex-direction: row;
 }
 
 .menuAvatar {
-    width: 60%;
+    width: 35%;
+    background: gold;
 }
 
 .content {
@@ -52,16 +50,16 @@ body {
     margin: auto; /* Выравнивание по середине */
     background: orchid;
     min-height: 100%;
-    height: 1px;
 }
 
 .handle {
-    height: 20%;
+    height: 20rem;
     background: peru;
     width: 100%;
 }
 
 .handle_top{
+    display: flex;
     height: 50%;
     width: 100%;
     background: white;
@@ -95,6 +93,7 @@ body {
 }
 
 .addBtn {
+    top: 30%;
     display: block;
     position: relative;
     width: 33%;
@@ -104,19 +103,85 @@ body {
 }
 
 .feed {
-    background: sandybrown;
+    background: red;
 }
 
-.translationPrev {
+.post {
+    display: flex;
     position: relative;
-    height: 6rem;
-    width: 50%;
+    height: 20rem;
+    width: 80%;
     margin: auto;
     background: seagreen;
+    margin-top: 5rem;
 }
 
-.footer {
+.postImg {
+    width: 30%;
+    height: 100%;
+    background: honeydew;
+}
+
+.postText {
+    width: 70%;
+    height: 100%;
+}
+
+.postName {
+    height: 30%;
+}
+
+.postName h1 {
+    text-align: center;
+}
+
+.postAddtional {
+    height: 30%;
+    width: 100%;
+    background: wheat;
+}
+
+.postInfo {
+    height: 30%;
+    width: 100%;
+    background: #ff00ff;
     display: flex;
+    flex-direction: row;
+}
+
+.post_bot_left {
+    width: 30%;
+    background: white;
+}
+
+.like {
+    background: forestgreen;
+    width: 50%;
+    height: 100%;
+    margin: auto;
+}
+
+.likeImg {
+    display: block;
+    margin: auto;
+    width: 30px; 
+    height: 30px;
+}
+
+.likeCounter {
+    display: block;
+    text-align: center;
+    top: 10px;
+    background: khaki;
+    height: 30%;
+}
+
+.postAuthor {
+    width: 70%;
+}
+.footer {
+    width: 100%;
     background: orange;
-    height: 10%;
+    height: 8rem;
+    margin-top: 5rem;
 }
