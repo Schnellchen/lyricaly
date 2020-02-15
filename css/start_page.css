@@ -11,26 +11,27 @@ html {
     width: 100%;
     min-height: 100%; /* Минимальная высота */
     font-size: 10px;
-    background: palegoldenrod;
+    background-color: palegoldenrod;
 }
 
 body {
     width: 100%;
     min-height: 100%;
-    background: palegreen;
+    background-color: palegreen;
 }
 
 .header {
     display: flex;
-    background: orange;
+    background-color: orange;
     height: 8rem;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .logo {
     width: 15%;
     height: 100%;
-    background: pink;
+    background-color: pink;
 }
 
 .menu {
@@ -42,19 +43,23 @@ body {
 
 .menuAvatar {
     width: 35%;
-    background: gold;
+    background-color: gold;
 }
 
 .content {
     width: 70%;
     margin: auto; /* Выравнивание по середине */
-    background: orchid;
+    background-color: orchid;
     min-height: 100%;
+}
+
+.title {
+    height: 10rem;
 }
 
 .handle {
     height: 20rem;
-    background: peru;
+    background-color: peru;
     width: 100%;
 }
 
@@ -62,7 +67,7 @@ body {
     display: flex;
     height: 50%;
     width: 100%;
-    background: white;
+    background-color: white;
     flex-direction: row;
 }
 
@@ -73,6 +78,9 @@ body {
     width: 70%;
     height: 40%;
     top: 30%;
+    border-radius: 30px;
+    outline: none;
+    box-shadow: none;
 }
 
 .searchBtn {
@@ -82,28 +90,30 @@ body {
     height: 40%;
     margin-right: 5%;
     margin-left: 5%;
-    background: wheat;
+    background-color: wheat;
     top: 30%;
 }
 
 .handle_bot{
     height: 50%;
     width: 100%;
-    background: greenyellow;
+    background-color: greenyellow;
 }
 
 .addBtn {
     top: 30%;
-    display: block;
     position: relative;
     width: 33%;
     height: 40%;
     margin: auto;
-    background: wheat;
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .feed {
-    background: red;
+    background-color: red;
 }
 
 .post {
@@ -112,14 +122,14 @@ body {
     height: 20rem;
     width: 80%;
     margin: auto;
-    background: seagreen;
+    background-color: seagreen;
     margin-top: 5rem;
 }
 
 .postImg {
     width: 30%;
     height: 100%;
-    background: honeydew;
+    background-color: honeydew;
 }
 
 .postText {
@@ -138,24 +148,24 @@ body {
 .postAddtional {
     height: 30%;
     width: 100%;
-    background: wheat;
+    background-color: wheat;
 }
 
 .postInfo {
     height: 30%;
     width: 100%;
-    background: #ff00ff;
+    background-color: #ff00ff;
     display: flex;
     flex-direction: row;
 }
 
 .post_bot_left {
     width: 30%;
-    background: white;
+    background-color: white;
 }
 
 .like {
-    background: forestgreen;
+    background-color: forestgreen;
     width: 50%;
     height: 100%;
     margin: auto;
@@ -172,7 +182,7 @@ body {
     display: block;
     text-align: center;
     top: 10px;
-    background: khaki;
+    background-color: khaki;
     height: 30%;
 }
 
@@ -181,7 +191,7 @@ body {
 }
 .footer {
     width: 100%;
-    background: orange;
+    background-color: orange;
     height: 8rem;
     margin-top: 5rem;
 }
