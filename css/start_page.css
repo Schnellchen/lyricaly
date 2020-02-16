@@ -7,7 +7,13 @@ div {
     position: relative;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 html {
+    font-family: sans-serif;
     width: 100%;
     min-height: 100%; /* Минимальная высота */
     font-size: 10px;
@@ -34,6 +40,11 @@ body {
     background-color: pink;
 }
 
+.logoImg {
+   width: 100%;
+   height: 8rem;
+}
+
 .menu {
     display: flex;
     width: 20%;
@@ -43,7 +54,17 @@ body {
 
 .menuAvatar {
     width: 35%;
+    height: 100%;
     background-color: gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuAvatarImg {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 60px;
 }
 
 .content {
@@ -54,7 +75,11 @@ body {
 }
 
 .title {
+    display: flex;
     height: 10rem;
+    justify-content: center;
+    align-items: center;
+    font-style: 10rem;
 }
 
 .handle {
@@ -78,20 +103,24 @@ body {
     width: 70%;
     height: 40%;
     top: 30%;
-    border-radius: 30px;
     outline: none;
-    box-shadow: none;
+    font-size: 2rem;
 }
 
 .searchBtn {
-    display: block;
+    display: flex;
     position: relative;
     width: 15%;
     height: 40%;
     margin-right: 5%;
     margin-left: 5%;
-    background-color: wheat;
+    background-color: #2528ec;
     top: 30%;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
 }
 
 .handle_bot{
@@ -106,10 +135,13 @@ body {
     width: 33%;
     height: 40%;
     margin: auto;
-    background-color: wheat;
+    background-color: #2528ec;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 30px;
+    font-size: 2rem;
+    color: white;
 }
 
 .feed {
@@ -126,10 +158,23 @@ body {
     margin-top: 5rem;
 }
 
+.postText {
+    font-size: 1.5rem;
+}
+
+.postName {
+    
+}
+
 .postImg {
     width: 30%;
     height: 100%;
     background-color: honeydew;
+}
+
+.cover {
+    width: 100%;
+    height: 100%;
 }
 
 .postText {
@@ -174,8 +219,8 @@ body {
 .likeImg {
     display: block;
     margin: auto;
-    width: 30px; 
-    height: 30px;
+    width: 2rem; 
+    height: 2rem;
 }
 
 .likeCounter {
