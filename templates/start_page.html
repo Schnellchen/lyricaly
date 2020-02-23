@@ -6,104 +6,123 @@
     <title>Lyricaly</title>
     <link rel="stylesheet" href="/css/start_page.css">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Kosugi+Maru|Poiret+One&display=swap" rel="stylesheet">
+    <!-- <script src="/js/start_page.js"></script> -->
 </head>
 
-<body>
+<body class="page">
     <header class="header">
-        <div class="logo"><img class="logoImg" src="/images/logo2.png"></img></div>
-        <div class="menu">
-            <div class="menuAvatar"><img class="menuAvatarImg" src="/images/avatar.png"></img></div>
-            <div class="menuMenu">
+        <div class="logo"><img class="logo__img" src="/images/logo2.png"></img></div>
+        <div class="menu-section">
+            <div class="avatar"><img class="avatar__img" src="/images/avatar.png"></img></div>
+            <div class="menu">
+                <ul class="menu-list">
+                    <li class="menu-list__item""><a href=" #">Профиль</a></li>
+                    <li class="menu-list__item"><a href="#">Выйти</a></li>
+                </ul>
             </div>
         </div>
     </header>
-    <div class="content">
-        <div class="handle">
-            <div class="handle_top">
-                <input class="searchInput" placeholder="Введите название группы или песни">
-                <a class="searchBtn" href="#">Искать</a>
+    <div class="content page__content">
+        <div class="content__head">
+            <div class="search content__search">
+                <input class="search__input" placeholder="Введите название группы или песни">
+                <a class="btn search__btn" href="#">Искать</a>
             </div>
-            <div class="handle_bot">
-                <a class="addBtn" href="#">+ Добавить перевод</a>
+            <div class="content__add">
+                <a class="btn content__add-btn" href="#">+ Добавить перевод</a>
             </div>
         </div>
         <div class="feed">
-            <div class="title">
+            <div class="feed__title">
                 <h1>Последние переводы</h1>
             </div>
             <div class="post">
-                <div class="postImg"><img class="cover" src="/images/poster.jpg"></img></div>
-                <div class="postText">
-                    <div class="postName">
-                        <h1>Skinny Puppy - Love in vein</h1>
+                <div class="post-cover"><img class="post-cover__img" src="/images/poster.jpg"></img></div>
+                <div class="post-info">
+                    <div class="post-info__name">
+                        <a href="#">
+                            <h1>Skinny Puppy - Love in vein</h1>
+                        </a>
                     </div>
-                    <div class="postAddtional">
+                    <div class="post-info__addtional">
                         <p>Last Rights, 1992</p>
                     </div>
-                    <div class="postInfo">
-                        <div class="post_bot_left">
-                            <div class="like">
-                                <a href="#"><img class="likeImg" src="/images/heart.png"></img></a>
-                                <div class="likeCounter">50</div>
+                    <div class="post-additional">
+                        <div class="post-stats">
+                            <div class="post-like">
+                                <a href="#"><img class="post-like__img" src="/images/heart.png"></img></a>
+                                <div class="post-like__counter">50</div>
                             </div>
                         </div>
-                        <div class="post_bot_right">
-                            <div class="postAuthor">
-                                <p>Автор: Schnellchen</p>
+                        <div class="post-author">
+                            <div class="post-author__txt">
+                                <a href="#">Автор: Schnellchen</a>
                             </div>
+                        </div>
+                        <div class="post-btn">
+                            <a class="btn post-btn__btn" href="#">Читать</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="post">
-                <div class="postImg"><img class="cover" src="/images/poster2.jpg"></img></div>
-                <div class="postText">
-                    <div class="postName">
-                        <h1>Tool - Lateralus</h1>
+                <div class="post-cover"><img class="post-cover__img" src="/images/poster2.jpg"></img></div>
+                <div class="post-info">
+                    <div class="post-info__name">
+                        <a href="#">
+                            <h1>Tool - Lateralus</h1>
+                        </a>
                     </div>
-                    <div class="postAddtional">
+                    <div class="post-info__addtional">
                         <p>Lateralus, 2002</p>
                     </div>
-                    <div class="postInfo">
-                        <div class="post_bot_left">
-                            <div class="like">
-                                <a href="#"><img class="likeImg" src="/images/heart.png"></img></a>
-                                <div class="likeCounter">12358</div>
+                    <div class="post-additional">
+                        <div class="post-stats">
+                            <div class="post-like">
+                                <a href="#"><img class="post-like__img" src="/images/heart.png"></img></a>
+                                <div class="post-like__counter">50</div>
                             </div>
                         </div>
-                        <div class="post_bot_right">
-                            <div class="postAuthor">
-                                <p>Автор: Schnellchen</p>
+                        <div class="post-author">
+                            <div class="post-author__txt">
+                                <a href="#">Автор: Schnellchen</a>
                             </div>
+                        </div>
+                        <div class="post-btn">
+                            <a class="btn post-btn__btn" href="#">Читать</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="post">
-                <div class="postImg"><img class="cover" src="/images/poster3.jpg"></img></div>
-                <div class="postText">
-                    <div class="postName">
-                        <h1>IAMX - Mile Deep Hollow</h1>
+                <div class="post-cover"><img class="post-cover__img" src="/images/poster3.jpg"></img></div>
+                <div class="post-info">
+                    <div class="post-info__name">
+                        <a href="#">
+                            <h1>IAMX - Mile Deep Hollow</h1>
+                        </a>
                     </div>
-                    <div class="postAddtional">
+                    <div class="post-info__addtional">
                         <p>Mile Deep Hollow EP, 2018</p>
                     </div>
-                    <div class="postInfo">
-                        <div class="post_bot_left">
-                            <div class="like">
-                                <a href="#"><img class="likeImg" src="/images/heart.png"></img></a>
-                                <div class="likeCounter">50</div>
+                    <div class="post-additional">
+                        <div class="post-stats">
+                            <div class="post-like">
+                                <a href="#"><img class="post-like__img" src="/images/heart.png"></img></a>
+                                <div class="post-like__counter">50</div>
                             </div>
                         </div>
-                        <div class="post_bot_right">
-                            <div class="postAuthor">
-                                <p>Автор: Schnellchen</p>
+                        <div class="post-author">
+                            <div class="post-author__txt">
+                                <a href="#">Автор: Schnellchen</a>
                             </div>
+                        </div>
+                        <div class="post-btn">
+                            <a class="btn post-btn__btn" href="#">Читать</a>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
     </div>
