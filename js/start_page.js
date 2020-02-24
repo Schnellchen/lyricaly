@@ -1,25 +1,11 @@
-let el = document.getElementsByClassName('menuMenuListItem');
-for (var i = 0; i < el.length; i++) {
-    el[i].addEventListener("mouseenter", showSub, false);
-    el[i].addEventListener("mouseleave", hideSub, false);
-}
+let modalOverlay = document.querySelector("#modal-overlay"),
+    closeButton = document.querySelector("#close-button"),
+    openButton = document.querySelector("#open-button-1");
 
-function showSub(e) {
-    if (this.children.length > 1) {
-        this.children[1].style.height = "auto";
-        this.children[1].style.overflow = "visible";
-        this.children[1].style.opacity = "1";
-    } else {
-        return false;
-    }
-}
+closeButton.addEventListener("click", function () { //Добавление слушателя на событие клик. Если нажали, оверлею придается класс closed
+    modalOverlay.classList.toggle("closed");
+});
 
-function hideSub(e) {
-    if (this.children.length > 1) {
-        this.children[1].style.height = "0px";
-        this.children[1].style.overflow = "hidden";
-        this.children[1].style.opacity = "0";
-    } else {
-        return false;
-    }
-}
+openButton.addEventListener("click", function () {
+    modalOverlay.classList.toggle("closed");
+});
