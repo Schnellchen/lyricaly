@@ -19,14 +19,12 @@ a, p, h1, h2, h3 {
 html {
     font-family: sans-serif;
     width: 100%;
-    min-height: 100%; /* Минимальная высота */
+     /* Минимальная высота */
     font-size: 10px;
 }
 
 .page {
     width: 100%;
-    min-height: 100%;
-    /*background-image: url("/images/cardboard.jpg");*/
     background-color: rgb(250, 239, 223);
 }
 
@@ -377,7 +375,9 @@ html {
 }
 
 
-
+.closed {
+    display: none;
+}
 
 .footer {
     width: 100%;
