@@ -37,8 +37,8 @@ html {
 }
 
 .logo {
-    width: 15%;
-    min-height: 8rem;
+    width: 20%;
+    height: 8rem;
 }
 
 .logo__img {
@@ -48,45 +48,64 @@ html {
 
 .menu-section {
     display: flex;
-    width: 25%;
+    width: 20%;
     height: 100%;
     flex-direction: row;
 }
 
-.avatar {
+.menu-avatar {
     width: 8rem;
-    height: 100%;
+    height: 8rem;
     
 }
 
-.avatar__img {
-    height: 100%;
+.menu-avatar__img {
     width: 100%;
-    border-radius: 50px;
+    height: 100%;
+    border-radius: 60px;
 }
 
 .menu {
-    width: 70%;
+    width: 50%;
     margin-left: 20px;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.menu-btn {
+    width: 60%;
+
 }
 
 .menu-list {
     list-style: none;
-    font-size: 1.5rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .menu-list__item {
     display: flex;
     margin-top: 0.5rem;
-    border-radius: 10px;
-    border: 1px black solid;
-    width: 50%;
+    width: 100%;
     justify-content: center;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    padding-top: 10px;
 }
 
 .menu-list__item:hover {
-    background-color: #f3f31a;
+    background-color: yellow;
 }
+
 
 .content {
     width: 70%;
@@ -192,13 +211,12 @@ html {
 }
 
 .post-cover {
-    width: 30%;
-    height: 100%;
+    width: 25rem;
+    height: 25rem;
 }
 
 .post-cover__img {
     width: 100%;
-    height: 100%;
 }
 
 .post-info {
@@ -393,16 +411,20 @@ html {
         font-size: 15px;
     }
 
-    .menu-list__item {
-        width: 100%;
+    .menu-section {
+        width: 30%;
+    }
+
+    .menu-avatar {
+        height: 7rem;
+    }
+
+    .menu {
+        width: 70%;
     }
 
     .content {
         width: 100%;
-    }
-
-    .post {
-        min-height: 15rem;
     }
 
     .modal-window {

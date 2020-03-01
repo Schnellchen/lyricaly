@@ -19,6 +19,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgba(0, 0, 0, 0.062);
+    border-radius: 30px; 
 }
 
 .user-avatar__img {
@@ -32,6 +34,8 @@
     width: 75%;
     height: 25rem;
     overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.062);
+    border-radius: 30px; 
 }
 
 .user-info__name {
@@ -72,57 +76,4 @@
 
 @media screen and (max-width: 1000px) {
 
-    html {
-        font-size: 15px;
-    }
-
-    .menu-list__item {
-        width: 100%;
-    }
-
-    .content {
-        width: 100%;
-    }
-
-    .post {
-        min-height: 15rem;
-    }
-
-    .modal-window {
-        width: 100%;
-    }
 }
-
-/* Так по приколу */
-
-::-webkit-scrollbar-button {
-    background-image:url('');
-    background-repeat:no-repeat;
-    width:5px;
-    height:0px
-    }
-    
-    ::-webkit-scrollbar-track {
-    background-color:#ecedee
-    }
-    
-    ::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 0px;
-    border-radius: 0px;
-    background-color:#0000006c;
-    }
-    
-    ::-webkit-scrollbar-thumb:hover{
-    background-color:#0000009c;
-    }
-    
-    ::-webkit-resizer{
-    background-image:url('');
-    background-repeat:no-repeat;
-    width:4px;
-    height:0px
-    }
-    
-    ::-webkit-scrollbar{
-    width: 4px;
-    }
