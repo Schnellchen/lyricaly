@@ -1,0 +1,73 @@
+<!DOCTYPE html> <!-- Тип документа -->
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Новый перевод</title>
+    <link rel="stylesheet" href="/css/start_page.css">
+    <link rel="stylesheet" href="/css/new_post_page.css">
+</head>
+
+<body class="page">
+    <header class="header" id="header">
+        <div class="logo"><img class="logo__img" src="/images/logo2.png"></img></div>
+        <div class="menu-section">
+            <div class="menu-avatar"><img class="menu-avatar__img" src="/images/avatar.jpg"></img></div>
+            <div class="menu">
+                <p class="btn menu-btn" id="menu-btn">Меню</p>
+                <ul class="menu-list" id="menu-list">
+                    <li class="menu-list__item"><a href=" #">Профиль</a></li>
+                    <li class="menu-list__item"><a href="#">Выйти</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="content page__content">
+        <form action="#" method="POST" class="new-post">
+            <div class="new-post__head">
+                <div class="new-post__cover"></div>
+                <div class="new-post__info">
+                    <div class="new-post__field"><input name="band" required class="new-post__input"
+                            placeholder="Введите название группы">
+                    </div>
+                    <div class="new-post__field"><input name="song" required class="new-post__input"
+                            placeholder="Введите название песни"></div>
+                    <div class="new-post__field"><input name="album" class="new-post__input"
+                            placeholder="Введите название альбома">
+                    </div>
+                    <div class="new-post__field"><input name="year" class="new-post__input"
+                            placeholder="Введите год релиза"></div>
+                    <div class="new-post__field"><input name="song-additional" class="new-post__input"
+                            placeholder="Дополнительно"></div>
+                </div>
+            </div>
+            <div class="new-post__body">
+                <div class="new-post__texts">
+
+                </div>
+                <div class="new-post__left">
+                    <div class="new-post__title">
+                        <p>Английский</p>
+                    </div>
+                    <div class="new-post__text">
+                        <textarea requied name="song-origin" class="new-post__lyrics"
+                            placeholder="Оригинальный текст"></textarea>
+                    </div>
+                </div>
+                <div class="new-post__right">
+                    <div class="new-post__title">
+                        <p>Русский</p>
+                    </div>
+                    <div class="new-post__text">
+                        <textarea requied name="song-translated" class="new-post__lyrics"
+                            placeholder="Перевод"></textarea>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <footer class="footer"></footer>
+    <script src="/js/dropdown-menu.js"></script>
+</body>
+
+</html>

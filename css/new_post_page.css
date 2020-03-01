@@ -1,0 +1,95 @@
+.new-post {
+    width: 100%;
+    height: 90rem;
+    background-color: coral;
+}
+
+.new-post__head {
+    width: 100%;
+    height: 25rem;
+    background-color: cornsilk;
+    top: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.new-post__cover {
+    width: 25rem;
+    height: 100%;
+    background-color: crimson;
+}
+
+.new-post__info {
+    width: 75%;
+    background-color: cyan;
+    height: 25rem;
+}
+
+.new-post__field {
+    width: 60%;
+    padding: 1rem;
+}
+
+.new-post__input {
+    display: block;
+    position: relative; 
+    width: 100%;
+    outline: none;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.new-post__body {
+    display: flex;
+    background-color: cadetblue;
+    top: 10rem;
+    height: 50rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.new-post__left {
+    width: 45%;
+    background-color: chartreuse;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.new-post__right {
+    width: 45%;
+    background-color: wheat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.new-post__title {
+    font-size: 2rem;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: violet;
+    border-radius: 20px;
+}
+
+.new-post__text {
+    width: 100%;
+    outline: none;
+    height: 44rem;
+    top: 2rem;
+}
+
+.new-post__lyrics {
+    display: block;
+    width: 100%;
+    outline: none;
+    font-size: 2rem;
+    height: 100%;
+    text-align: center;
+    border-radius: 10px;
+    resize: none;
+    
+}
