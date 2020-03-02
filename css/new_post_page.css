@@ -1,54 +1,70 @@
 .new-post {
     width: 100%;
-    height: 90rem;
+    height: 100rem;
     background-color: coral;
+    display: flex; /* отменяет схлопывание */
+    flex-direction: column;
 }
 
 .new-post__head {
     width: 100%;
     height: 25rem;
     background-color: cornsilk;
-    top: 5rem;
     display: flex;
     justify-content: space-between;
+    margin-top: 5rem;
 }
 
 .new-post__cover {
     width: 25rem;
-    height: 100%;
+    height: 25rem;
     background-color: crimson;
 }
 
 .new-post__info {
     width: 75%;
     background-color: cyan;
-    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-.new-post__field {
+.new-post__input-field {
     width: 60%;
-    padding: 1rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    height: 4rem;
 }
 
 .new-post__input {
     display: block;
     position: relative; 
-    width: 100%;
+    width: 90%;
     outline: none;
     font-size: 2rem;
     font-weight: 100;
+    border: none;
 }
 
 .new-post__body {
-    display: flex;
     background-color: cadetblue;
-    top: 10rem;
-    height: 50rem;
+    /* height: 55rem; */
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
 }
 
-.new-post__left {
+.new-post__content {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: tomato;
+    /* height: 50rem; */
+    margin-top: 5rem;
+}
+
+.new-post__origin-text {
     width: 45%;
     background-color: chartreuse;
     display: flex;
@@ -56,7 +72,7 @@
     align-items: center;
 }
 
-.new-post__right {
+.new-post__translated-text {
     width: 45%;
     background-color: wheat;
     display: flex;
@@ -64,7 +80,7 @@
     align-items: center;
 }
 
-.new-post__title {
+.new-post__text-title {
     font-size: 2rem;
     width: 100%;
     height: 4rem;
@@ -78,8 +94,10 @@
 .new-post__text {
     width: 100%;
     outline: none;
-    height: 44rem;
-    top: 2rem;
+    height: 45rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
 }
 
 .new-post__lyrics {
@@ -87,9 +105,68 @@
     width: 100%;
     outline: none;
     font-size: 2rem;
-    height: 100%;
     text-align: center;
     border-radius: 10px;
-    resize: none;
+    resize: none; 
+    height: 100%;
+    border: none;
+}
+
+.new-post__footer {
+    width: 100%;
+    height: 10rem;
+    background-color: thistle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-post__btn {
+    width: 30%;
+    height: 6rem;
+    border: none;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .new-post {
+        min-height: 200rem;
+    }
+
+    .new-post__head {
+        height: 65rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: unset;
+    }
+
+    .new-post__info {
+        width: 100%;
+        height: 40rem;
+    }
     
+    .new-post__input-field {
+        width: 100%;
+        height: 6rem;
+    }
+
+    .new-post__input {
+        font-size: 3rem;
+    }
+
+    .new-post__content {
+        flex-direction: column;
+    }
+
+    .new-post__translated-text, .new-post__origin-text {
+        width: 100%;
+    }
+
+    .new-post__lyrics {
+        width: 90%;
+    }
+
+    .new-post__lyrics::placeholder {
+        font-size: 3rem;
+    }
 }

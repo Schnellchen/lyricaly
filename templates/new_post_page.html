@@ -27,42 +27,44 @@
             <div class="new-post__head">
                 <div class="new-post__cover"></div>
                 <div class="new-post__info">
-                    <div class="new-post__field"><input name="band" required class="new-post__input"
+                    <div class="new-post__input-field"><input name="band" required class="new-post__input"
                             placeholder="Введите название группы">
                     </div>
-                    <div class="new-post__field"><input name="song" required class="new-post__input"
+                    <div class="new-post__input-field"><input name="song" required class="new-post__input"
                             placeholder="Введите название песни"></div>
-                    <div class="new-post__field"><input name="album" class="new-post__input"
+                    <div class="new-post__input-field"><input name="album" class="new-post__input"
                             placeholder="Введите название альбома">
                     </div>
-                    <div class="new-post__field"><input name="year" class="new-post__input"
+                    <div class="new-post__input-field"><input name="year" class="new-post__input"
                             placeholder="Введите год релиза"></div>
-                    <div class="new-post__field"><input name="song-additional" class="new-post__input"
+                    <div class="new-post__input-field"><input name="song-additional" class="new-post__input"
                             placeholder="Дополнительно"></div>
                 </div>
             </div>
             <div class="new-post__body">
-                <div class="new-post__texts">
-
+                <div class="new-post__content">
+                    <div class="new-post__origin-text">
+                        <div class="new-post__text-title">
+                            <p>Английский</p>
+                        </div>
+                        <div class="new-post__text">
+                            <textarea requied name="song-origin" class="new-post__lyrics"
+                                placeholder="Оригинальный текст"></textarea>
+                        </div>
+                    </div>
+                    <div class="new-post__translated-text">
+                        <div class="new-post__text-title">
+                            <p>Русский</p>
+                        </div>
+                        <div class="new-post__text">
+                            <textarea requied name="song-translated" class="new-post__lyrics"
+                                placeholder="Перевод"></textarea>
+                        </div>
+                    </div>
                 </div>
-                <div class="new-post__left">
-                    <div class="new-post__title">
-                        <p>Английский</p>
-                    </div>
-                    <div class="new-post__text">
-                        <textarea requied name="song-origin" class="new-post__lyrics"
-                            placeholder="Оригинальный текст"></textarea>
-                    </div>
-                </div>
-                <div class="new-post__right">
-                    <div class="new-post__title">
-                        <p>Русский</p>
-                    </div>
-                    <div class="new-post__text">
-                        <textarea requied name="song-translated" class="new-post__lyrics"
-                            placeholder="Перевод"></textarea>
-                    </div>
-                </div>
+            </div>
+            <div class="new-post__footer">
+                <input class="btn new-post__btn" type="submit">
             </div>
         </form>
     </div>
