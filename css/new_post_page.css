@@ -1,46 +1,64 @@
 .new-post {
     width: 100%;
-    height: 100rem;
-    background-color: coral;
-    display: flex; /* отменяет схлопывание */
+    height: 125rem;
+    display: flex;
+    /* отменяет схлопывание */
     flex-direction: column;
 }
 
 .new-post__head {
     width: 100%;
-    height: 25rem;
-    background-color: cornsilk;
+    height: 25%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 5rem;
+    background-color: rgba(0, 0, 0, 0.062);
+    border-radius: 10px;
 }
 
-.new-post__cover {
+.new-post__cover-download {
     width: 25rem;
-    height: 25rem;
-    background-color: crimson;
-}
-
-.new-post__info {
-    width: 75%;
-    background-color: cyan;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-.new-post__input-field {
+.new-post__download-btn {
+    height: 10%;
+}
+
+.new-post__file-input {
+    display: none;
+}
+
+.new-post__cover {
+    width: 25rem;
+    height: 25rem;
+    background-image: url(/images/empty_cover.jpg);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.new-post__info {
     width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.new-post__input-field {
+    width: 100%;
     background-color: white;
     display: flex;
     justify-content: center;
     border-radius: 30px;
-    height: 4rem;
+    height: 15%;
 }
 
 .new-post__input {
     display: block;
-    position: relative; 
+    position: relative;
     width: 90%;
     outline: none;
     font-size: 2rem;
@@ -49,8 +67,7 @@
 }
 
 .new-post__body {
-    background-color: cadetblue;
-    /* height: 55rem; */
+    height: 65%;
     display: flex;
     flex-direction: column;
 }
@@ -59,72 +76,68 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
-    background-color: tomato;
-    /* height: 50rem; */
-    margin-top: 5rem;
-}
-
-.new-post__origin-text {
-    width: 45%;
-    background-color: chartreuse;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.new-post__translated-text {
-    width: 45%;
-    background-color: wheat;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.new-post__text-title {
-    font-size: 2rem;
-    width: 100%;
-    height: 4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: violet;
-    border-radius: 20px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.021);
 }
 
 .new-post__text {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+
+
+.new-post__lyrics-title {
+    font-size: 2rem;
     width: 100%;
-    outline: none;
-    height: 45rem;
-    margin-top: 2rem;
     display: flex;
     justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    height: 10%;
+    margin-top: 5%;
+    background-color: rgba(0, 0, 0, 0.062);
+    border-radius: 10px;
 }
 
 .new-post__lyrics {
+    width: 100%;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    height: 80%;
+    margin-top: 5%;
+}
+
+.new-post__textarea {
     display: block;
     width: 100%;
     outline: none;
     font-size: 2rem;
     text-align: center;
     border-radius: 10px;
-    resize: none; 
-    height: 100%;
+    resize: none;
     border: none;
 }
 
 .new-post__footer {
     width: 100%;
-    height: 10rem;
-    background-color: thistle;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.062);
+    border-radius: 10px;
 }
 
 .new-post__btn {
     width: 30%;
-    height: 6rem;
     border: none;
+    height: 50%;
+    font-size: 2rem;
 }
 
 @media screen and (max-width: 1000px) {
@@ -134,20 +147,32 @@
     }
 
     .new-post__head {
-        height: 65rem;
         flex-direction: column;
         align-items: center;
         justify-content: unset;
+        height: 30%;
+    }
+
+    .new-post__cover-download {
+        display: flex;
+        width: 70%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .new-post__download-btn {
+        height: 15%;
+        width: 40%;
+        font-size: 3rem;
     }
 
     .new-post__info {
         width: 100%;
-        height: 40rem;
+        height: 60%;
     }
-    
+
     .new-post__input-field {
         width: 100%;
-        height: 6rem;
     }
 
     .new-post__input {
@@ -158,15 +183,23 @@
         flex-direction: column;
     }
 
-    .new-post__translated-text, .new-post__origin-text {
+    .new-post__text {
         width: 100%;
     }
 
-    .new-post__lyrics {
+    .new-post__lyrics-title {
+        font-size: 3rem;
+    }
+
+    .new-post__textarea {
         width: 90%;
     }
 
-    .new-post__lyrics::placeholder {
+    .new-post__textarea::placeholder {
         font-size: 3rem;
+    }
+
+    .new-post__footer {
+        height: 5%;
     }
 }

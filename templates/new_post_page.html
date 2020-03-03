@@ -23,9 +23,15 @@
         </div>
     </header>
     <div class="content page__content">
-        <form action="#" method="POST" class="new-post">
+        <form action="#" enctype="multipart/form-data" method="POST" class="new-post">
             <div class="new-post__head">
-                <div class="new-post__cover"></div>
+                <div class="new-post__cover-download">
+                    <div class="new-post__cover"><img class="new-post__img"></div>
+                    <label for="cover-download-btn" class="btn new-post__download-btn">
+                        <input id="cover-download-btn" name="cover-download" type="file" accept="image/jpeg,image/png"
+                            class="new-post__file-input"><span>+ Загрузить</span>
+                    </label>
+                </div>
                 <div class="new-post__info">
                     <div class="new-post__input-field"><input name="band" required class="new-post__input"
                             placeholder="Введите название группы">
@@ -43,21 +49,21 @@
             </div>
             <div class="new-post__body">
                 <div class="new-post__content">
-                    <div class="new-post__origin-text">
-                        <div class="new-post__text-title">
+                    <div class="new-post__text">
+                        <div class="new-post__lyrics-title">
                             <p>Английский</p>
                         </div>
-                        <div class="new-post__text">
-                            <textarea requied name="song-origin" class="new-post__lyrics"
+                        <div class="new-post__lyrics">
+                            <textarea requied name="song-origin" class="new-post__textarea"
                                 placeholder="Оригинальный текст"></textarea>
                         </div>
                     </div>
-                    <div class="new-post__translated-text">
-                        <div class="new-post__text-title">
+                    <div class="new-post__text">
+                        <div class="new-post__lyrics-title">
                             <p>Русский</p>
                         </div>
-                        <div class="new-post__text">
-                            <textarea requied name="song-translated" class="new-post__lyrics"
+                        <div class="new-post__lyrics">
+                            <textarea requied name="song-translated" class="new-post__textarea"
                                 placeholder="Перевод"></textarea>
                         </div>
                     </div>
